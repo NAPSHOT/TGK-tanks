@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -221,19 +221,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013832442442, guid: d32c986572a602c4a98cf2058d7dd422, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4000013832442442, guid: d32c986572a602c4a98cf2058d7dd422, type: 2}
       propertyPath: m_LocalScale.x
-      value: 19.029993
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4000013832442442, guid: d32c986572a602c4a98cf2058d7dd422, type: 2}
       propertyPath: m_LocalScale.y
-      value: 19.030006
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4000013832442442, guid: d32c986572a602c4a98cf2058d7dd422, type: 2}
       propertyPath: m_LocalScale.z
-      value: 19.030006
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4000013832442442, guid: d32c986572a602c4a98cf2058d7dd422, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -283,15 +283,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 2f36ff213ce19454f80e5be2bd75e2fd, type: 3}
       propertyPath: m_LocalScale.x
-      value: 11.810904
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 2f36ff213ce19454f80e5be2bd75e2fd, type: 3}
       propertyPath: m_LocalScale.y
-      value: 11.810906
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 2f36ff213ce19454f80e5be2bd75e2fd, type: 3}
       propertyPath: m_LocalScale.z
-      value: 11.810906
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 2f36ff213ce19454f80e5be2bd75e2fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
