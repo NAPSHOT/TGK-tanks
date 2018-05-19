@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -113,6 +113,23 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &11285363 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1846175463991314, guid: 586318731feb964498d0a235dd74fe66,
+    type: 2}
+  m_PrefabInternal: {fileID: 759353110}
+--- !u!114 &11285366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 11285363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ea3c1b86c4da95408f9562c9fc74f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  t_TurnSpeed: 180
 --- !u!1001 &759353110
 Prefab:
   m_ObjectHideFlags: 0
@@ -151,6 +168,44 @@ Prefab:
     - target: {fileID: 4233937885208278, guid: 586318731feb964498d0a235dd74fe66, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660027958223484, guid: 586318731feb964498d0a235dd74fe66, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660027958223484, guid: 586318731feb964498d0a235dd74fe66, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660027958223484, guid: 586318731feb964498d0a235dd74fe66, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660027958223484, guid: 586318731feb964498d0a235dd74fe66, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660027958223484, guid: 586318731feb964498d0a235dd74fe66, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660027958223484, guid: 586318731feb964498d0a235dd74fe66, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660027958223484, guid: 586318731feb964498d0a235dd74fe66, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54040189863753526, guid: 586318731feb964498d0a235dd74fe66,
+        type: 2}
+      propertyPath: m_Mass
+      value: 20000
+      objectReference: {fileID: 0}
+    - target: {fileID: 54040189863753526, guid: 586318731feb964498d0a235dd74fe66,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 64
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 586318731feb964498d0a235dd74fe66, type: 2}
@@ -250,6 +305,7 @@ GameObject:
   - component: {fileID: 1749677698}
   - component: {fileID: 1749677697}
   - component: {fileID: 1749677696}
+  - component: {fileID: 1749677700}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -313,13 +369,32 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1749677695}
-  m_LocalRotation: {x: 0.35836798, y: 0, z: 0, w: 0.93358046}
-  m_LocalPosition: {x: 1242, y: 400, z: 386}
+  m_LocalRotation: {x: 0.2164396, y: 0, z: 0, w: 0.97629607}
+  m_LocalPosition: {x: 1252, y: 218, z: 330}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 42, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 25, y: 0, z: 0}
+--- !u!114 &1749677700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1749677695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c92f29958ffaa4746a6ff2977a333663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1992551230}
+  smoothSpeed: 0.125
+  offset: {x: 0, y: 250, z: -150}
+--- !u!4 &1992551230 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4233937885208278, guid: 586318731feb964498d0a235dd74fe66,
+    type: 2}
+  m_PrefabInternal: {fileID: 759353110}
 --- !u!1 &2019777212
 GameObject:
   m_ObjectHideFlags: 0

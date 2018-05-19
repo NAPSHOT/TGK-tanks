@@ -5,8 +5,7 @@ public class PlayerMove : MonoBehaviour
 	public float m_Speed = 12f;                 // How fast the tank moves forward and back.
 	public float m_TurnSpeed = 180f;            // How fast the tank turns in degrees per second.
 
-	private string m_MovementAxisName;          // The name of the input axis for moving forward and back.
-	private string m_TurnAxisName;              // The name of the input axis for turning.
+
 	private Rigidbody m_Rigidbody;              // Reference used to move the tank.
 	private float m_MovementInputValue;         // The current value of the movement input.
 	private float m_TurnInputValue;             // The current value of the turn input.
@@ -38,9 +37,6 @@ public class PlayerMove : MonoBehaviour
 
 	private void Start ()
 	{
-		// The axes names are based on player number.
-		m_MovementAxisName = "Vertical";
-		m_TurnAxisName = "Horizontal";
 
 	}
 
@@ -48,8 +44,8 @@ public class PlayerMove : MonoBehaviour
 	private void Update ()
 	{
 		// Store the value of both input axes.
-		m_MovementInputValue = Input.GetAxis (m_MovementAxisName);
-		m_TurnInputValue = Input.GetAxis (m_TurnAxisName);
+		m_MovementInputValue = Input.GetAxis ("Vertical");
+		m_TurnInputValue = Input.GetAxis ("Horizontal");
 
 	}
 		
