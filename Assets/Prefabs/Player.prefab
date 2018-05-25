@@ -37,6 +37,7 @@ GameObject:
   - component: {fileID: 54117108014467526}
   - component: {fileID: 65733446123317660}
   - component: {fileID: 114905853440491348}
+  - component: {fileID: 114459294976166374}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -3477,6 +3478,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 4.5}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &114459294976166374
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1013283088320156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e81d2f126f3546e41aaf0442cfab7a85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 60
+  currentHealth: 5
+  healthSlider: {fileID: 0}
+  damageImage: {fileID: 0}
+  flashSpeed: 5
+  flashColour: {r: 1, g: 0, b: 0, a: 0.1}
 --- !u!114 &114655942662547608
 MonoBehaviour:
   m_ObjectHideFlags: 1

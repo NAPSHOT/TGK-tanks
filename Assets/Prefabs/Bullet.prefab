@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 136707998430055648}
   - component: {fileID: 23644443033750068}
   - component: {fileID: 54823490013453196}
+  - component: {fileID: 108504517787071740}
+  - component: {fileID: 114346487266403274}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -37,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1480039325844478}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 250, y: 1.8, z: 45}
+  m_LocalPosition: {x: 250, y: 15, z: 48}
   m_LocalScale: {x: 0.05, y: 0.08, z: 0.05}
   m_Children: []
   m_Father: {fileID: 0}
@@ -99,6 +101,59 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!108 &108504517787071740
+Light:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1480039325844478}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 5
+  m_Range: 5
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!114 &114346487266403274
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1480039325844478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fddd809f24ed5a746b3447beea0e9052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TankMask:
+    serializedVersion: 2
+    m_Bits: 256
+  m_MaxDamage: 100
+  m_MaxLifeTime: 2
+  m_ExplosionRadius: 5
 --- !u!136 &136707998430055648
 CapsuleCollider:
   m_ObjectHideFlags: 1
