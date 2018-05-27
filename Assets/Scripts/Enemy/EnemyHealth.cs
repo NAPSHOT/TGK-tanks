@@ -20,7 +20,7 @@ public class EnemyHealth : MonoBehaviour
         boxCollider = GetComponent<BoxCollider>();
 
         enemyTurretRotation = GetComponentInChildren<EnemyTurretRotation>();
-        shooting = GetComponent<EnemyShooting>();
+        shooting = GetComponentInChildren<EnemyShooting>();
 
         // Setting the current health when the enemy first spawns.
         currentHealth = startingHealth;

@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 
 
-public class BulletExplosion : MonoBehaviour
+public class EnemyBullet : MonoBehaviour
 {
 	public LayerMask m_TankMask;  
 	public float m_MaxDamage = 100f;  
-	public float m_MaxLifeTime = 4f;
+	public float m_MaxLifeTime = 10f;
 	public float m_ExplosionRadius = 5f; 
 
 

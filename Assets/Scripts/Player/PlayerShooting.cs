@@ -54,5 +54,6 @@ public class PlayerShooting : MonoBehaviour
 		Rigidbody shellInstance =
 			Instantiate (m_Shell, m_FireTransform.position, m_FireTransform.rotation) as Rigidbody;
 		shellInstance.velocity = LaunchForce * m_FireTransform.forward;
+        shellInstance.rotation = gameObject.transform.rotation;
 	}
 }

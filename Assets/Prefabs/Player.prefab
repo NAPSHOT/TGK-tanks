@@ -38,7 +38,6 @@ GameObject:
   - component: {fileID: 65733446123317660}
   - component: {fileID: 114905853440491348}
   - component: {fileID: 114459294976166374}
-  - component: {fileID: 114135999142052918}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -431,6 +430,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4126160458385184}
   - component: {fileID: 114655942662547608}
+  - component: {fileID: 114267014948040644}
   m_Layer: 0
   m_Name: turret_2
   m_TagString: Untagged
@@ -3489,8 +3489,8 @@ Rigidbody:
   m_GameObject: {fileID: 1013283088320156}
   serializedVersion: 2
   m_Mass: 20000
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: Infinity
+  m_AngularDrag: Infinity
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3508,18 +3508,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 4.5}
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &114135999142052918
+--- !u!114 &114267014948040644
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1013283088320156}
+  m_GameObject: {fileID: 1355784736266310}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67d1ef12789a44b4ea267a1d45f5d51a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Shell: {fileID: 54823490013453196, guid: 49e6e6c1f511def479efc0929c21f521, type: 2}
+  m_Shell: {fileID: 54249438370154960, guid: eaca73d2f08cb6a47960e81ca598ff4d, type: 2}
   m_FireTransform: {fileID: 4787870750566562}
   shootSlider: {fileID: 0}
   LaunchForce: 100
@@ -3535,8 +3535,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e81d2f126f3546e41aaf0442cfab7a85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 60
-  currentHealth: 5
+  startingHealth: 100
+  currentHealth: 100
   healthSlider: {fileID: 0}
   damageImage: {fileID: 0}
   gameOverImage: {fileID: 0}
@@ -3564,8 +3564,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b177576c5e276340ab4252567a746bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Speed: 6
-  m_TurnSpeed: 120
+  m_Speed: 10
+  m_TurnSpeed: 140
 --- !u!137 &137128675809948392
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

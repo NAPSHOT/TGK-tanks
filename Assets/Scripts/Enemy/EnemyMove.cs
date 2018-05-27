@@ -16,7 +16,7 @@ public class EnemyMove : MonoBehaviour
     {
         // Set up the references.
         player = GameObject.FindWithTag("Player").transform;
-        playerHealth = player.GetComponent<PlayerHealth>();
+        playerHealth = GameObject.FindWithTag("Player").GetComponent<PlayerHealth>();
         enemyHealth = GetComponent<EnemyHealth>();
         nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
     }
