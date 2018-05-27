@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 114135999142052918}
   m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1177,7 +1177,7 @@ Transform:
   - {fileID: 4787870750566562}
   m_Father: {fileID: 4637782953290972}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!4 &4129186753040696
 Transform:
   m_ObjectHideFlags: 1
@@ -1590,7 +1590,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1021992724158642}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0053083515, y: -2.6522515, z: 1.2180545}
+  m_LocalPosition: {x: 0.5, y: -2.6522515, z: 1.2180545}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4943448250646322}
@@ -1697,7 +1697,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1013283088320156}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 250, y: 0, z: 40}
+  m_LocalPosition: {x: 250, y: 0, z: 80}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4240880580183402}
@@ -3539,6 +3539,7 @@ MonoBehaviour:
   currentHealth: 5
   healthSlider: {fileID: 0}
   damageImage: {fileID: 0}
+  gameOverImage: {fileID: 0}
   flashSpeed: 5
   flashColour: {r: 1, g: 0, b: 0, a: 0.1}
 --- !u!114 &114655942662547608
@@ -3552,7 +3553,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ea3c1b86c4da95408f9562c9fc74f18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  t_TurnSpeed: 180
 --- !u!114 &114905853440491348
 MonoBehaviour:
   m_ObjectHideFlags: 1
