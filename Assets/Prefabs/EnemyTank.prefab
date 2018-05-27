@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 65185777917425068}
   - component: {fileID: 195974722917552690}
   - component: {fileID: 114850251191756544}
+  - component: {fileID: 114840696962458434}
   m_Layer: 8
   m_Name: EnemyTank
   m_TagString: EnemyTank
@@ -512,6 +513,7 @@ GameObject:
   - component: {fileID: 4466023799651326}
   - component: {fileID: 33265813955381698}
   - component: {fileID: 23506912464941086}
+  - component: {fileID: 114931694647122928}
   m_Layer: 8
   m_Name: turret
   m_TagString: Untagged
@@ -4538,11 +4540,26 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1055108147986740}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.0859833, y: 1.8, z: 4.3189087}
   m_Center: {x: 0, y: 0.9, z: 0}
+--- !u!114 &114840696962458434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1055108147986740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81cd3cc37deb3f942b28a9618537d9bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 50
+  currentHealth: 0
+  sinkSpeed: 2.5
+  scoreValue: 10
 --- !u!114 &114850251191756544
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4554,6 +4571,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89e84d6510404f5458b6149bd8bf509c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DistanceToPlayer: 30
+  DistanceToPlayerHeuristics: 10
+--- !u!114 &114931694647122928
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1408269432685308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b273efca0439bf647a5624f7005f7e76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TurnSpeed: 60
 --- !u!137 &137182900241872746
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -4679,7 +4710,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 2.4
-  m_Speed: 5
+  m_Speed: 4
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

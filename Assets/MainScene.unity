@@ -173,13 +173,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 77525606}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81cd3cc37deb3f942b28a9618537d9bb, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ca1d1a589ca7d64ead0380cfae667c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 50
-  currentHealth: 0
-  sinkSpeed: 2.5
-  scoreValue: 10
+  m_Shell: {fileID: 0}
+  m_FireTransform: {fileID: 0}
+  shootSlider: {fileID: 0}
+  LaunchForce: 10
+  TimeToShoot: 10
 --- !u!1 &515311197 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1777569289008878, guid: 73842aaed95d3ff4caa09b6a6c360021,
@@ -333,36 +334,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 195974722917552690, guid: 4a369fafce9b606489b9babe243af6d0,
-        type: 2}
-      propertyPath: m_Speed
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 65185777917425068, guid: 4a369fafce9b606489b9babe243af6d0,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4a369fafce9b606489b9babe243af6d0, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &718445406 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1408269432685308, guid: 4a369fafce9b606489b9babe243af6d0,
-    type: 2}
-  m_PrefabInternal: {fileID: 638313935}
---- !u!114 &718445410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 718445406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b273efca0439bf647a5624f7005f7e76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TurnSpeed: 60
 --- !u!114 &895418065 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114208906655234728, guid: 73842aaed95d3ff4caa09b6a6c360021,

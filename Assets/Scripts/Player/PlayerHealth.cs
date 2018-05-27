@@ -13,8 +13,8 @@ public class PlayerHealth : MonoBehaviour
 	public Color flashColour = new Color(1f, 0f, 0f, 0.1f); 
 
 
-	PlayerMove playerMove;                              
-	Shooting shooting;
+	PlayerMove playerMove;
+    PlayerShooting shooting;
     PlayerTurretRotation playerTurretRotation;
 	bool isDead;     
 	bool damaged; 
@@ -24,7 +24,7 @@ public class PlayerHealth : MonoBehaviour
 	{
 
 		playerMove = GetComponent <PlayerMove> ();
-		shooting = GetComponent <Shooting> ();
+		shooting = GetComponent <PlayerShooting> ();
         playerTurretRotation = GetComponentInChildren <PlayerTurretRotation> ();
 
 		gameOverImage.SetActive (false);
