@@ -7,7 +7,7 @@ public class Shooting : MonoBehaviour
 	public Transform m_FireTransform;          
 	public Slider shootSlider; 
 	public float LaunchForce = 100.0f;        
-	public float timeToShoot = 5.0f;
+	public float TimeToShoot = 5.0f;
 
 
 	private string m_FireButton;            
@@ -25,10 +25,10 @@ public class Shooting : MonoBehaviour
 
 	private void Update ()
 	{
-		if (coolDownTimer < timeToShoot) {
+		if (coolDownTimer < TimeToShoot) {
 			coolDownTimer += Time.deltaTime;
-			if (coolDownTimer > timeToShoot){
-				shootSlider.value = timeToShoot;
+			if (coolDownTimer > TimeToShoot){
+				shootSlider.value = TimeToShoot;
 			} 
 			else{
 				shootSlider.value = coolDownTimer;

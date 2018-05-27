@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class TurretMove : MonoBehaviour
+public class PlayerTurretRotation : MonoBehaviour
 {
 	private void FixedUpdate ()
 	{
@@ -8,7 +8,8 @@ public class TurretMove : MonoBehaviour
 	}
 
 	private void TurnTurret()
-	{		RaycastHit hit;
+	{
+        RaycastHit hit;
 		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 		if (Physics.Raycast (ray, out hit, 1000)) {
 

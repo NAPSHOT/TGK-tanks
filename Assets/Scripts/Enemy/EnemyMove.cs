@@ -3,10 +3,13 @@ using System.Collections;
 
 public class EnemyMove : MonoBehaviour
 {
+    public float DistanceToPlayer = 30.0f;
+    public float DistanceToPlayerHeuristics = 10.0f;
     Transform player;               // Reference to the player's position.
     Transform enemyTank;
     PlayerHealth playerHealth;      // Reference to the player's health.
     // EnemyHealth enemyHealth;        // Reference to this enemy's health.
+    float targetDistanceToPlayer;
     UnityEngine.AI.NavMeshAgent nav;// Reference to the nav mesh agent.
 
 
@@ -14,7 +17,7 @@ public class EnemyMove : MonoBehaviour
     {
         // Set up the references.
         player = GameObject.FindWithTag("Player").transform;
-        enemyTank = GameObject.FindWithTag("EnemyTank").transform;
+        enemyTank = gameObject.transform;
         playerHealth = player.GetComponent<PlayerHealth>();
         //enemyHealth = GetComponent<EnemyHealth>();
         nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
@@ -23,15 +26,21 @@ public class EnemyMove : MonoBehaviour
 
     void Update()
     {
-        // If the enemy and the player have health left...
-        // enemyHealth.currentHealth > 0 &&
         if (playerHealth.currentHealth > 0)
         {
-            // ... set the destination of the nav mesh agent to the player.
-            if(Vector3.Distance(enemyTank.position, player.position) > 10.0f)
+            float distance = Vector3.Distance(enemyTank.position, player.position);
+            if(distance > DistanceToPlayer)
             {
                 nav.isStopped = false;
                 nav.SetDestination(player.position);
+                targetDistanceToPlayer = Random.Range(DistanceToPlayer - DistanceToPlayerHeuristics, DistanceToPlayer);
+            }
+            else if(distance > targetDistanceToPlayer)
+            {
+                if(!nav.isStopped)
+                {
+                    nav.SetDestination(player.position);
+                }
             }
             else
             {
@@ -39,10 +48,8 @@ public class EnemyMove : MonoBehaviour
             }
             
         }
-        // Otherwise...
         else
         {
-            // ... disable the nav mesh agent.
             nav.enabled = false;
         }
     }

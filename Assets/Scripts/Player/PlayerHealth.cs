@@ -14,8 +14,8 @@ public class PlayerHealth : MonoBehaviour
 
 
 	PlayerMove playerMove;                              
-	Shooting shooting;        
-	TurretMove turretMove;
+	Shooting shooting;
+    PlayerTurretRotation playerTurretRotation;
 	bool isDead;     
 	bool damaged; 
 
@@ -25,7 +25,7 @@ public class PlayerHealth : MonoBehaviour
 
 		playerMove = GetComponent <PlayerMove> ();
 		shooting = GetComponent <Shooting> ();
-		turretMove = GetComponentInChildren <TurretMove> ();
+        playerTurretRotation = GetComponentInChildren <PlayerTurretRotation> ();
 
 		gameOverImage.SetActive (false);
 
@@ -68,6 +68,6 @@ public class PlayerHealth : MonoBehaviour
 		gameOverImage.SetActive (true);
 		playerMove.enabled = false;
 		shooting.enabled = false;
-		turretMove.enabled = false;
+        playerTurretRotation.enabled = false;
 	}       
 }

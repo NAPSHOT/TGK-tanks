@@ -25,12 +25,21 @@ public class BulletExplosion : MonoBehaviour
 			if (!targetRigidbody)
 				continue;
 			PlayerHealth targetHealth = targetRigidbody.GetComponent<PlayerHealth> ();
+            EnemyHealth enemyHealth = targetRigidbody.GetComponent<EnemyHealth>();
 
-			if (!targetHealth)
-				continue;
-			int damage = (int) CalculateDamage (targetRigidbody.position);
+            if (targetHealth)
+            {
+                int damage = (int)CalculateDamage(targetRigidbody.position);
 
-			targetHealth.TakeDamage (damage);
+                targetHealth.TakeDamage(damage);
+            }
+			else if (enemyHealth)
+            {
+                int damage = (int)CalculateDamage(targetRigidbody.position);
+
+                enemyHealth.TakeDamage(damage);
+            }
+            
 		}
 		Destroy (gameObject);
 	}
