@@ -5,7 +5,7 @@ public class EnemyHealth : MonoBehaviour
     public int startingHealth = 100;            // The amount of health the enemy starts the game with.
     public int currentHealth;                   // The current health the enemy has.
     public float sinkSpeed = 2.5f;              // The speed at which the enemy sinks through the floor when dead.
-    public int scoreValue = 10;                 // The amount added to the player's score when the enemy dies.
+    
 
     //ParticleSystem hitParticles;                // Reference to the particle system that plays when the enemy is damaged.
     BoxCollider boxCollider;                    // Reference to the box collider.
@@ -62,7 +62,7 @@ public class EnemyHealth : MonoBehaviour
 
         isSinking = true;
 
-        // ScoreManager.score += scoreValue;
+        ScoreManager.score += 1;
 
         Destroy(gameObject, 2f);
     }
@@ -70,16 +70,8 @@ public class EnemyHealth : MonoBehaviour
 
     public void StartSinking()
     {
-        // Find the rigidbody component and make it kinematic (since we use Translate to sink the enemy).
         GetComponent<Rigidbody>().isKinematic = true;
-
-        // The enemy should no sink.
         isSinking = true;
-
-        // Increase the score by the enemy's score value.
-        // ScoreManager.score += scoreValue;
-
-        // After 2 seconds destory the enemy.
         Destroy(gameObject, 2f);
     }
 }

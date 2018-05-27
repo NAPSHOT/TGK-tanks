@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -160,27 +160,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95272f0711d05964f9debdcb5311ca5d, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &77525606 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1055108147986740, guid: 4a369fafce9b606489b9babe243af6d0,
-    type: 2}
-  m_PrefabInternal: {fileID: 638313935}
---- !u!114 &77525607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 77525606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ca1d1a589ca7d64ead0380cfae667c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Shell: {fileID: 0}
-  m_FireTransform: {fileID: 0}
-  shootSlider: {fileID: 0}
-  LaunchForce: 10
-  TimeToShoot: 10
 --- !u!1 &515311197 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1777569289008878, guid: 73842aaed95d3ff4caa09b6a6c360021,
@@ -245,11 +224,6 @@ Prefab:
       propertyPath: shootSlider
       value: 
       objectReference: {fileID: 1164729645}
-    - target: {fileID: 114135999142052918, guid: 586318731feb964498d0a235dd74fe66,
-        type: 2}
-      propertyPath: TimeToShoot
-      value: 5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 586318731feb964498d0a235dd74fe66, type: 2}
   m_IsPrefabParent: 0
@@ -460,22 +434,22 @@ Prefab:
     - target: {fileID: 224551474129253360, guid: 73842aaed95d3ff4caa09b6a6c360021,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224551474129253360, guid: 73842aaed95d3ff4caa09b6a6c360021,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224748881398940534, guid: 73842aaed95d3ff4caa09b6a6c360021,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224748881398940534, guid: 73842aaed95d3ff4caa09b6a6c360021,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 73842aaed95d3ff4caa09b6a6c360021, type: 2}

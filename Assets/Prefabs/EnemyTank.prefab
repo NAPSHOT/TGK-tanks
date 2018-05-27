@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 114850251191756544}
   - component: {fileID: 114840696962458434}
   - component: {fileID: 114901618203895280}
+  - component: {fileID: 114927557038561782}
   m_Layer: 8
   m_Name: EnemyTank
   m_TagString: EnemyTank
@@ -4560,7 +4561,6 @@ MonoBehaviour:
   startingHealth: 50
   currentHealth: 0
   sinkSpeed: 2.5
-  scoreValue: 10
 --- !u!114 &114850251191756544
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4589,6 +4589,21 @@ MonoBehaviour:
   m_FireTransform: {fileID: 0}
   LaunchForce: 10
   TimeToShoot: 5
+--- !u!114 &114927557038561782
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1055108147986740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca1d1a589ca7d64ead0380cfae667c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Shell: {fileID: 0}
+  m_FireTransform: {fileID: 0}
+  LaunchForce: 10
+  TimeToShoot: 10
 --- !u!114 &114931694647122928
 MonoBehaviour:
   m_ObjectHideFlags: 1
