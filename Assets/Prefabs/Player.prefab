@@ -3523,7 +3523,7 @@ MonoBehaviour:
   m_FireTransform: {fileID: 4787870750566562}
   shootSlider: {fileID: 0}
   LaunchForce: 100
-  timeToShoot: 5
+  TimeToShoot: 5
 --- !u!114 &114459294976166374
 MonoBehaviour:
   m_ObjectHideFlags: 1
