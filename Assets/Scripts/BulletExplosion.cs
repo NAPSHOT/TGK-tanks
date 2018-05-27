@@ -32,7 +32,7 @@ public class BulletExplosion : MonoBehaviour
 				continue;
 
 			// Find the TankHealth script associated with the rigidbody.
-			Health targetHealth = targetRigidbody.GetComponent<Health> ();
+			PlayerHealth targetHealth = targetRigidbody.GetComponent<PlayerHealth> ();
 
 			// If there is no TankHealth script attached to the gameobject, go on to the next collider.
 			if (!targetHealth)
