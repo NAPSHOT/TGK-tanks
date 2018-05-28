@@ -626,7 +626,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4787870750566562}
   m_Layer: 0
-  m_Name: FireTransform
+  m_Name: PlayerFireTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1848,7 +1848,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1570611316958182}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -10, z: 0.9}
+  m_LocalPosition: {x: 0, y: -13.12, z: 0.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4126160458385184}

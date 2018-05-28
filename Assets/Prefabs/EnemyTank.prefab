@@ -1302,7 +1302,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4961612982792016}
   m_Layer: 8
-  m_Name: FireTransform
+  m_Name: EnemyFireTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4588,7 +4588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Shell: {fileID: 54200171641331414, guid: 2dc269af5dc343a429d5c76d540a85c8, type: 2}
   m_FireTransform: {fileID: 4961612982792016}
-  DistanceToFire: 45
+  DistanceToFire: 40
   LaunchForce: 20
   TimeToShoot: 5
 --- !u!114 &114840696962458434
